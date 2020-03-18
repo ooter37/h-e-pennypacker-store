@@ -1,68 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### JUST BECAUSE YOU'RE QUARANTINED DOESN'T MEAN YOU CAN'T MAKE MONEY!
+<hr/>
 
-## Available Scripts
+Hello! My name is H.E. Pennypacker. I'm an eccentric venture capitalist with a keen eye for business. I have an idea to make money off of all this panic about the current global health crisis but I need your help. Since people can't get out of their homes to go shopping, my store needs to be 100% online. I have the inventory and delivery infrastructure in place -- I just need a store!
 
-In the project directory, you can run:
+*And that's where you come in!*
 
-### `yarn start`
+I would like an online store with the following functionality:
+- users can see my inventory
+- they can add items to their cart
+- users can see their cart on the side of the screen
+- it should look enticing and appealing
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<hr/>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+To help you in completing H.E. Pennypacker's store you have been given a blank `create-react-app` with a server file already created and a json file for his inventory. Here's what you need to complete his store:
 
-### `yarn test`
+Step 1: Finish configuring his basic store
+- complete setting up `server/index.js` with express
+    - run `npm i express`
+    - bring in express using the `require` key word
+    - put your top level middleware in place using `app.use(express.json())`
+    - Set up your server to listen to port 4000
+        - ***Note: your server has already been connected to your front end so it's crucial that your server runs on port 4000***
+    - run `nodemon` in your terminal to check if your server is running correctly
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Step 2: Write the following end points
+- an `app.get('/api/getInventory')` with a handler that sends back the entire inventory
+    - **Remember!** If you don't include `res.status(200).send(whateverYouAreSending)` you won't actually be sending anything to your front end
 
-### `yarn build`
+Step 3: Design and create a front-end
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- install axios using `npm i axios`
+- Let your creativity go wild! Create a website worthy of H.E. Pennypacker's eccentricity, wealth, and greed. Some guidelines you should follow:
+    - consider creating a visual sketch of how you want the website to look when you're done. Which components should have state? Or, in other words, which components should hold any kind of data? (**Hint**: Whichever component is holding the data from your server should have some state).
+    - create your component files in the `src/components/` folder
+    - remember that in order to retrieve your data from the server you need to do an axios.get call that should look something like this:
+    ```js
+    getAllInventory(){
+        // What always follows an axios call? Hint: We get a *response* from our promise. Once we get a response, what do we do **THEN**?
+        axios.get('/api/getInventory')
+    }
+    ```
+     - it's crucial that the endpoint inside your axios.get matches the corresponding endpoint on your server like in my examples.
+     - since Mr. Pennypacker wants his users to have a visible cart, you can store this temporarily in state for now
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Other tips!
+- consult ALL previous lecture notes, minis, and afternoons
+- consult Google
+- consult Mentors/Instructor if you get stuck
+- stay positive!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+BLACK DIAMOND
+    - move your users cart from the front end to the backend where it persists as long as the server doesn't refresh
+    - write an app.post endpoint for clients to add items to their cart
+    - write an additional app.get for clients to see what's in their cart on the server
+    - write an app.put that allows users to update the quantity in their cart
+    - write an app.delete that allows users to remove an item from their cart entirely

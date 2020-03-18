@@ -1,0 +1,68 @@
+[
+    {
+        "id" : 1,
+        "name" : "Face Mask",
+        "imgUrl" : "https://www.angstromcleanroomsupply.com/media/product/5a8/alphaguard-cleanroom-face-mask-a6c.jpg",
+        "price" : 74.99
+    },
+    {
+        "id" : 2,
+        "name" : "A Single Roll of Toilet Paper",
+        "imgUrl" : "https://images.homedepot-static.com/productImages/94dc5bfe-ffc8-440c-9987-56e02bacc46b/svn/angel-soft-toilet-paper-gep16880-64_1000.jpg",
+        "price" : 119.99
+    },
+    {
+        "id" : 3,
+        "name" : "Hand Sanitizer",
+        "imgUrl" : "https://pics.drugstore.com/prodimg/352353/900.jpg",
+        "price" : 29.99
+    },
+    {
+        "id" : 4,
+        "name" : "Knitting Starter Kit",
+        "imgUrl" : "https://di2ponv0v5otw.cloudfront.net/posts/2019/07/07/5d22b39108d2c25ed32e4fce/m_5d22b3a6b3e917dd5d97e27a.jpg",
+        "price" : 10.99
+    },
+    {
+        "id" : 5,
+        "name" : "Disinfectant Wipes",
+        "imgUrl" : "https://content.etilize.com/3000/1010898204.jpg",
+        "price" : 49.99
+    },
+    {
+        "id" : 6,
+        "name" : "Pop Tarts",
+        "imgUrl" : "https://www.meijer.com/content/dam/meijer/product/0003/80/0031/71/0003800031710_6_A1C1_0600.png",
+        "price" : 4.99
+    },
+    {
+        "id" : 7,
+        "name" : "Robot Butler",
+        "imgUrl" : "https://technabob.com/blog/wp-content/uploads/2019/01/ubtech_walker_robot_1.jpg",
+        "price" : 499.99
+    },
+    {
+        "id" : 8,
+        "name" : "Rent An Hour With Greg Kinnear",
+        "imgUrl" : "https://vignette.wikia.nocookie.net/disney/images/9/96/Greg_Kinnear.jpg/revision/latest?cb=20180619020139",
+        "price" : 0.99
+    },
+    {
+        "id" : 9,
+        "name" : "Your Neighbor's Food Storage",
+        "imgUrl" : "https://imgix.bustle.com/uploads/image/2018/8/28/c4fcbfff-56ab-40ec-bde7-61432669790d-best-dry-food-storage-containers-5.png",
+        "price" : 99.99
+    },
+    {
+        "id" : 10,
+        "name" : "Lost Season 2 DVD",
+        "imgUrl" : "https://prodimage.images-bn.com/pimages/0786936300468_p0_v2_s1200x630.jpg",
+        "price" : 29.99
+    },
+    {
+        "id" : 11,
+        "name" : "Q-Tips",
+        "imgUrl" : "https://images.uline.com/is/image/content/dam/images/S/S19000/S-18985.jpg?$Mobile_Zoom$&iccEmbed=1&icc=AdobeRGB",
+        "price" : 5.99
+    }
+]
