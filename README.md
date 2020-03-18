@@ -1,6 +1,8 @@
 ### JUST BECAUSE YOU'RE QUARANTINED DOESN'T MEAN YOU CAN'T MAKE MONEY!
 <hr/>
 
+<img src="https://img.buzzfeed.com/buzzfeed-static/static/enhanced/webdr03/2013/2/11/12/enhanced-buzz-16510-1360604890-8.jpg?output-quality=auto&output-format=auto&downsize=640:*">
+
 Hello! My name is H.E. Pennypacker. I'm an eccentric venture capitalist with a keen eye for business. I have an idea to make money off of all this panic about the current global health crisis but I need your help. Since people can't get out of their homes to go shopping, my store needs to be 100% online. I have the inventory and delivery infrastructure in place -- I just need a store!
 
 *And that's where you come in!*
