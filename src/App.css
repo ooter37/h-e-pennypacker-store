@@ -80,3 +80,14 @@
 	align-items: stretch;
 	align-content: stretch;
 }
+
+.cart-header {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.total {
+  font-style: italic;
+  margin-top: 30px;
+}

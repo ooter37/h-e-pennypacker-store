@@ -8,7 +8,8 @@ class App extends React.Component {
     super()
     this.state = {
       inventory: [],
-      cart: []
+      cart: [],
+      total: 0
     }
     this.addToCart = this.addToCart.bind(this)
   }
@@ -21,9 +22,10 @@ class App extends React.Component {
     })
   }
 
-  addToCart(id) {
+  addToCart(id, price) {
     let newCart = [...this.state.cart,id]
     this.setState({cart: newCart})
+    this.setState({total: this.state.total + price})
   }
 
   render(){
@@ -35,14 +37,15 @@ class App extends React.Component {
           <span>{item.price}</span>
           <img className='product-img' alt='product-img' src={item.imgUrl}/>
           <br></br>
-          <button onClick={() => this.addToCart(item.id)}>Add to Cart</button>
+          <button onClick={() => this.addToCart(item.id, item.price)}    >Add to Cart</button>
         </div>
       })
 
       const mappedCart = this.state.cart.map(cartItem => {
+        let index = this.state.inventory.findIndex(product => product.id === cartItem)
         return(
         <div className='cart-item'>
-          <h1>{this.state.inventory[cartItem -1].name}</h1>
+          <div>{this.state.inventory[index].name}</div>
         </div>
         )
       })
@@ -53,9 +56,11 @@ class App extends React.Component {
       {mappedInventory}
       </div>
       <div className='cart'>
+      <h1 className='cart-header'>END OF THE WORLD CART</h1>
         {mappedCart}
-
+        <div className='total'>TOTAL: ${Number.parseFloat(this.state.total).toFixed(2)}</div>
       </div>
+      
     </div>
     );
   }
